@@ -16,3 +16,5 @@ def count(request):
     result = sorted(result.items(),key=lambda x:x[1],reverse=True)
     print(result)
     return render(request,'count.html',{'count_result':result})
+def about(request):
+    return render(request,'about.html')
